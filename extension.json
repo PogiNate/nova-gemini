@@ -5,5 +5,9 @@
   "description": "Gemini file syntax highlighting in Nova",
   "version": "0.5",
   "categories": ["languages"],
-  "activationEvents": ["onLanguage:gemini", "onLanguage:gmi"]
+  "activationEvents": ["onLanguage:gemini", "onLanguage:gmi"],
+  "funding": "https://ko-fi.com/nated",
+  "repository": "https://github.com/PogiNate/nova-gemini",
+  "bugs": "https://github.com/PogiNate/nova-gemini/issues",
+  "license": "MIT"
 }
