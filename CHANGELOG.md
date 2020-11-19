@@ -1,3 +1,3 @@
-## Version 1.0
+## Version 0.5.0
 
-Initial release
+Initial release. It works well enough on my machine! 🤞🏼
