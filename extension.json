@@ -1,0 +1,9 @@
+{
+  "identifier": "com.natedickson.Gemini",
+  "name": "Gemini",
+  "organization": "Nate Dickson",
+  "description": "Gemini file syntax highlighting in Nova",
+  "version": "0.5",
+  "categories": ["languages"],
+  "activationEvents": ["onLanguage:gemini", "onLanguage:gmi"]
+}

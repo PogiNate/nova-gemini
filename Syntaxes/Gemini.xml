@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="mylang">
+    <meta>
+        <name>Gemini</name>
+        <type>markup</type>
+        <preferred-file-extension>gmi</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension priority="1.0">gmi,gemini</extension>
+    </detectors>
+    
+    <scopes>
+        <scope name="gemini.markup.heading.h1">
+            <starts-with>
+                <expression>\#</expression>
+            </starts-with>
+            <ends-with>
+                <expression>$</expression>
+            </ends-with>
+        </scope>
+        <scope name="gemini.markup.heading.h2">
+            <starts-with>
+                <expression>\#\#</expression>
+            </starts-with>
+            <ends-with>
+                <expression>$</expression>
+            </ends-with>
+        </scope>
+        <scope name="gemini.markup.heading.h3">
+            <starts-with>
+                <expression>\#\#\#</expression>
+            </starts-with>
+            <ends-with>
+                <expression>$</expression>
+            </ends-with>
+        </scope>
+        <scope name="gemini.fenced-code-block">
+            <starts-with>
+                <expression>\`\`\`</expression>
+            </starts-with>
+            
+            <ends-with>
+                <expression>\`\`\`</expression>
+            </ends-with>
+        </scope>  
+        <scope name="gemini.markup.italic.quote">
+            <starts-with>
+                <expression>$\>\w</expression>
+            </starts-with>
+            <ends-with>
+                <expression>$</expression>
+            </ends-with>
+        </scope>
+        <!-- <scope name="gemini.keyword">
+            <expression> => </expression>
+        </scope> -->
+        <scope name="gemini.string.identifier">
+            <expression>(=>) (.+) (.+)</expression>
+            <capture number="1" name="gemini.keyword" />
+            <capture number="2" name="gemini.string.key" />
+            <capture number="3" name="gemini.string" />
+        </scope>
+        <scope name="gemini.markup.list.item">
+            <starts-with>
+                <expression>\*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>$</expression>
+            </ends-with>
+        </scope>
+    </scopes>
+</syntax>
