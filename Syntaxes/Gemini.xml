@@ -13,7 +13,7 @@
     <scopes>
         <scope name="gemini.markup.heading.h1">
             <starts-with>
-                <expression>\#</expression>
+                <expression>\#\s</expression>
             </starts-with>
             <ends-with>
                 <expression>$</expression>
@@ -21,7 +21,7 @@
         </scope>
         <scope name="gemini.markup.heading.h2">
             <starts-with>
-                <expression>\#\#</expression>
+                <expression>\#\#\s</expression>
             </starts-with>
             <ends-with>
                 <expression>$</expression>
@@ -29,19 +29,19 @@
         </scope>
         <scope name="gemini.markup.heading.h3">
             <starts-with>
-                <expression>\#\#\#</expression>
+                <expression>\#\#\#\s</expression>
             </starts-with>
             <ends-with>
                 <expression>$</expression>
             </ends-with>
         </scope>
-        <scope name="gemini.fenced-code-block">
+        <scope name="gemini.markup.code">
             <starts-with>
-                <expression>\`\`\`</expression>
+                <expression>```</expression>
             </starts-with>
             
             <ends-with>
-                <expression>\`\`\`</expression>
+                <expression>```</expression>
             </ends-with>
         </scope>  
         <scope name="gemini.markup.italic">

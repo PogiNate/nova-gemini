@@ -6,12 +6,13 @@
 
 ## Language Support
 
-Gemini currently supports all (four) known features of the Gemtext specification:
+Gemini currently supports all (five) known features of the Gemtext specification:
 
 - Headings (three levels)
 - Unordered lists
 - Quotes
 - Links
+- Fenced code Blocks
 
 ## Contributing
 
