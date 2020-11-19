@@ -2,7 +2,7 @@
 
 **Gemini** provides syntax highlighting for [Gemini](https://portal.mozz.us/gemini/gemini.circumlunar.space/) files, often called [Gemtext](https://portal.mozz.us/gemini/gemini.circumlunar.space/docs/gemtext.gmi).
 
-![](https://i.snap.as/ArtPoHqV.png)
+![](https://i.snap.as/Z30eIz2Q.png)
 
 ## Language Support
 
@@ -12,7 +12,7 @@ Gemini currently supports all (five) known features of the Gemtext specification
 - Unordered lists
 - Quotes
 - Links
-- Fenced code Blocks
+- Fenced code blocks
 
 ## Contributing
 
