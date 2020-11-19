@@ -3,7 +3,7 @@
   "name": "Gemini",
   "organization": "Nate Dickson",
   "description": "Gemini file syntax highlighting in Nova",
-  "version": "0.5",
+  "version": "0.5.1",
   "categories": ["languages"],
   "activationEvents": ["onLanguage:gemini", "onLanguage:gmi"],
   "funding": "https://ko-fi.com/nated",
