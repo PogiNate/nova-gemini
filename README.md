@@ -12,7 +12,7 @@ Gemini currently supports all (five) known features of the Gemtext specification
 - Unordered lists
 - Quotes
 - Links
-- Fenced code blocks
+- Fenced preformatted blocks
 
 ## Contributing
 
