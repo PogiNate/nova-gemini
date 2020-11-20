@@ -12,41 +12,32 @@
     
     <scopes>
         <scope name="gemini.markup.heading.h1">
-            <starts-with>
-                <expression>\#\s</expression>
-            </starts-with>
-            <ends-with>
-                <expression>$</expression>
-            </ends-with>
+            <symbol type="heading" />
+            <expression>^\#\s(.+)$</expression>
+            <capture number="1" name="gemini.markup.heading.h1.name" />
         </scope>
         <scope name="gemini.markup.heading.h2">
-            <starts-with>
-                <expression>\#\#\s</expression>
-            </starts-with>
-            <ends-with>
-                <expression>$</expression>
-            </ends-with>
+            <symbol type="heading" />
+            <expression>^\#\#\s(.+)$</expression>
+            <capture number="1" name="gemini.markup.heading.h2.name" />  
         </scope>
         <scope name="gemini.markup.heading.h3">
-            <starts-with>
-                <expression>\#\#\#\s</expression>
-            </starts-with>
-            <ends-with>
-                <expression>$</expression>
-            </ends-with>
+            <symbol type="heading" />
+            <expression>^\#\#\#\s(.+)$</expression>
+            <capture number="1" name="gemini.markup.heading.h3.name" />  
         </scope>
         <scope name="gemini.markup.code">
             <starts-with>
-                <expression>```</expression>
+                <expression>^```</expression>
             </starts-with>
             
             <ends-with>
-                <expression>```</expression>
+                <expression>^```</expression>
             </ends-with>
         </scope>  
         <scope name="gemini.markup.italic">
             <starts-with>
-                <expression>\>\s</expression>
+                <expression>^\>\s</expression>
             </starts-with>
             <ends-with>
                 <expression>$</expression>
@@ -56,7 +47,7 @@
             <expression> => </expression>
         </scope> -->
         <scope name="gemini.string.identifier">
-            <expression>(\=\>)(\s[\S]+\s)(.+)</expression>
+            <expression>^(\=\>)(\s[\S]+\s)(.+)$</expression>
             <capture number="1" name="gemini.keyword" />
             <capture number="2" name="gemini.string.key" />
             <capture number="3" name="gemini.markup.bold" />
